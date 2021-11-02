@@ -29,8 +29,15 @@ switch(i)
 		printf("ans=%d\n",x);
 		break;
 	case 4:
+		if (num2==0)
+		{
+		printf("not divisilbe by 0");
+		}
+		else
+		{
 		x=divi(num1,num2);
 		printf("ans=%d\n",x);
+		}
 		break;
 	case 5:
 		exit(0);
@@ -66,5 +73,6 @@ int divi(int num1,int num2)
 int x;
 x=(num1/num2);
 printf("ans=%d\n",x);
+
 return x;
 }
